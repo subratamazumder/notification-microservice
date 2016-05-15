@@ -48,7 +48,7 @@ public class MicroServiceNotificationApplication implements CommandLineRunner {
 //		System.out.println();
 		
 		
-		System.out.println("Receiver thread started from git6......");
+		System.out.println("Receiver thread started from git7......");
 		queueService.receiveMessage();
 		
 		
