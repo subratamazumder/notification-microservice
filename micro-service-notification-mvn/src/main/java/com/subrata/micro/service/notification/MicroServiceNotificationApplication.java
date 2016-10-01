@@ -17,8 +17,8 @@ public class MicroServiceNotificationApplication implements CommandLineRunner {
 //public class MicroServiceNotificationApplication {
 //	@Autowired
 //	NotificationTemplateRepository repository;
-	@Value("${notification.service.mail.fromid}")
-	private String fromMailId;
+//	@Value("${notification.service.mail.fromid}")
+//	private String fromMailId;
 	public static void main(String[] args) {
 		SpringApplication.run(MicroServiceNotificationApplication.class, args);	
 	}
@@ -48,13 +48,9 @@ public class MicroServiceNotificationApplication implements CommandLineRunner {
 //		System.out.println();
 		
 		
-<<<<<<< HEAD
-//		System.out.println("Receiver thread started from git3......");
+//		System.out.println("Receiver thread started from git some more text......");
 //		queueService.receiveMessage();
-=======
-		System.out.println("Receiver thread started from git some more text......");
-		queueService.receiveMessage();
->>>>>>> b0e25831658a818891275e83f722500bc4383f61
+
 		
 		
 	}
