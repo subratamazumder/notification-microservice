@@ -1,6 +1,7 @@
 package com.subrata.micro.service.notification;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,15 +17,14 @@ public class MicroServiceNotificationApplication implements CommandLineRunner {
 //public class MicroServiceNotificationApplication {
 //	@Autowired
 //	NotificationTemplateRepository repository;
-	
-	@Autowired
-	private QueueService queueService;
+	@Value("${notification.service.mail.fromid}")
+	private String fromMailId;
 	public static void main(String[] args) {
 		SpringApplication.run(MicroServiceNotificationApplication.class, args);	
 	}
 	@Override
 	public void run(String... args) throws Exception {
-		
+//		System.out.println("***************fromMailId---------------"+fromMailId);
 //		try {
 //			MongoDAO mongoDAO = new MongoDAO();
 //			String templateBody = mongoDAO.fetchTemplate("sms");

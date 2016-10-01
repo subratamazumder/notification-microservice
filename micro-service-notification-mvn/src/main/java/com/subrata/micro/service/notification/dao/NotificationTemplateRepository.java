@@ -6,6 +6,7 @@ import com.subrata.micro.service.notification.domain.NotificationTemplate;
 
 public interface NotificationTemplateRepository  extends MongoRepository<NotificationTemplate, String>{
 	
+	public NotificationTemplate findByTypeAndCommunicationType(String type,String communicationType);
 	public NotificationTemplate findByType(String type);
 
 }

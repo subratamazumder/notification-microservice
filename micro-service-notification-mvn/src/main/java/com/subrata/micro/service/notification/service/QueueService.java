@@ -1,6 +1,7 @@
 package com.subrata.micro.service.notification.service;
 
+import com.subrata.micro.service.notification.domain.Notification;
+
 public interface QueueService {
-public void sendMessage(String message);
-public void receiveMessage();
+public void publishMessage(Notification notificationMessage);
 }
